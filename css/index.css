@@ -1,4 +1,69 @@
 body {
-	display: grid;
-	grid-template-columns: 2fr 8fr
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#list-panel {
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
+
+#list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#list li:hover {
+    background-color: #e0e0e0;
+}
+
+#show-panel {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#show-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+#likers-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+
+.action-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+    background-color: #45a049;
+}
+
+.action-buttons button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
 }
